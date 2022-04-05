@@ -16,10 +16,20 @@ const NFTCard = (props) => {
 
   return(
     <NftCard>
-
+      <NftPhoto style={{ backgroundImage: `url(${nft && nft.image})`}}/>
     </NftCard>
   )
 }
+
+const NftPhoto = styled.div`
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: auto;
+`
 
 const NftCard = styled.div`
   width: 200px;
